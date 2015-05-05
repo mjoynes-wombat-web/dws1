@@ -1,0 +1,8 @@
+Git Hub Repository
+https://github.com/ssmith-wombatweb/dws1
+
+Git Hub Repository gh-pages Branch
+https://github.com/ssmith-wombatweb/dws1/tree/gh-pages
+
+Git Hub Project 1 Live Link
+http://ssmith-wombatweb.github.io/dws1/week-1/project/smith-simeon-project1/index.html
