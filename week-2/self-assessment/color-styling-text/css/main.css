@@ -1,0 +1,47 @@
+body {
+	background-color:#C5D65D;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+	font-weight:normal;
+}
+
+h1{
+	font-family:Georgia, Times, serif;
+	font-size:2.5em;
+	text-shadow:2px 2px #666;
+	color:#652E8A;
+}
+
+h2{
+	font-family:Gill Sans, Arial, sans-serif;
+	font-size:.9em;
+	text-transform:uppercase;
+}
+
+h3{
+	font-size:1.5em;
+	color:#28083D;
+}
+
+p{
+	font-family:Arial, Verdana, sans-serif;
+	line-height:1.4em;
+}
+
+a:link{
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+#intro{
+	font-weight:bold;
+}
+
+#credits{
+	font-style:italic;
+	text-align:right;
+}
