@@ -1,15 +1,16 @@
 /*General*/
 
 body{
-	background-color:#F9F0CA;
+	background:#F9F0CA url("../images/something-70s-subtle.gif") repeat top left;
 	font-family:'Lato', sans-serif;
 	margin:0;
+	
 }
 
 	/*HEADINGS*/
 	h1{
 		font:2.75em 'Merienda One', cursive;
-		letter-spacing:1px;
+		letter-spacing:.03em;
 	}
 
 	h2, h3, h4, h5, h6 {
@@ -31,8 +32,8 @@ body{
 	/*INLINE TEXT*/
 	p {
 		font-size:1em;
-		letter-spacing:1px;
-		text-indent:20px;
+		letter-spacing:.05em;
+		text-indent:1.25em;
 		margin-top:10px;
 	}
 
@@ -67,10 +68,17 @@ body{
 /*Header*/
 
 header {
-	background-color:#5084A2;
+	background: #5084a2; /* Old browsers */
+	background: -moz-linear-gradient(-65deg,  #366a87 0%, #5084a2 36%, #6b99b2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#366a87), color-stop(36%,#5084a2), color-stop(100%,#6b99b2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-65deg,  #366a87 0%,#5084a2 36%,#6b99b2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-65deg,  #366a87 0%,#5084a2 36%,#6b99b2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-65deg,  #366a87 0%,#5084a2 36%,#6b99b2 100%); /* IE10+ */
+	background: linear-gradient(175deg,  #366a87 0%,#5084a2 36%,#6b99b2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#366a87', endColorstr='#6b99b2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	margin:0 auto 40px auto;
 	position:relative;
-	min-width:960px;
+	width:100%;
 	box-shadow:2px 2px 6px rgba(0, 0, 0, 0.6);
 	border-bottom:1px solid #C7E0EF;
 }
@@ -78,32 +86,39 @@ header {
 
 	/*HEADINGS*/
 	header h1, header h2{
-		width:860px;
+		width:67.1%;
 		margin:0 auto;
-		padding:0 0 0 50px;
+		padding:0 0 0 3.9%;
 	}
 
 	header h1{
 		color:#F8E14C;
 		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-		padding:30px 0 0 75px;
-		width:830px;
+		padding:30px 0 0 5.8%;
+		width:64.8%;
 	}
 
 	header h2 {
 		font: italic 300 1.2em 'Allerta', sans-serif;
 		color:#C7E0EF;
-		letter-spacing:-1px;
+		letter-spacing:-.0625em;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+		overflow:auto;
 	}
 
 	
 /*Navigation*/
 
-nav {
-	height:40px;
+div#navWrapper{
+	width:100%;
+	height:2.6em;
 	background-color:#077A3D;
 	margin-top:20px;
+}
+
+nav {
+	width:75%;
+	margin:0 auto;
 	z-index:500;
 }
 
@@ -113,10 +128,11 @@ nav {
 	nav a:link{
 		text-decoration:none;
 		color:#fff;
-		font: 1.2em/40px 'Allerta', sans-serif;
+		font: 1.2em 'Allerta', sans-serif;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 		display:inline-block;
 		width:100%;
+		padding:.5em 0;
 	}
 
 	nav a:active{
@@ -129,35 +145,35 @@ nav {
 	}	
 	
 	nav ul ul a:link {
-		font:1.1em/40px 'Allerta', sans-serif;
+		font:1.1em 'Allerta', sans-serif;
 	}
 
 	
 	/*LIST*/
+	
 	nav ul {
 		list-style:none;
 		width:100%;
 		margin:0 auto;
 		padding:0;
-		width:960px;
-		height:40px;
 	}
 
 	ul li:hover > ul {
 		display:block;
 	}
-
+	
 	nav ul li {
 		float:left;
-		height:40px;
-		width:238px;
+		height:2.6em;
+		padding:0 3.5%;
 		text-align:center;
 		border-left:1px solid #2A8C54;
 		border-right:1px solid #2A8C54;
 	}
-
+	
 	nav ul li:hover{
 		background-color:#004C1F;
+		padding:0;
 	}
 
 	nav ul ul {
@@ -171,30 +187,59 @@ nav {
 	nav ul ul li {
 		float:none;
 		width:auto;
-		height:40px;
+		height:auto;
+		padding:0 3%;
 		background-color:#00662C;
 	}
 
 	nav ul ul li:hover {
 		background-color:#004C1F;
+		padding:0 3%;
 	}
+	
 
 /*Content*/
 
 article, section#images, aside#seeAlso {
-	width:880px;
-	margin: 40px auto;
-	padding:20px 40px 40px 40px;
+	padding:20px 4.25%;
 	background-color:#fff;
 	border-radius:20px;
 	border:1px solid #2A8C54;
 	box-shadow:3px 3px 8px rgba(0, 0, 0, 0.6);
 }
 
+main{
+	overflow:auto;
+	width:73.4%;
+	margin:40px auto;
+	padding:.78%;
+}
+
+article {
+	width:52.4%;
+	float:left;
+	clear:left;
+	margin-right:1.5%;
+}
+
+section#images, aside#seeAlso{
+	width:26.5%;
+	float:left;
+	clear:right;
+	margin-bottom:30px;
+	margin-left:1.5%;
+}
+
 	/*HEADINGS*/
+	
+	#about h2, #about h3 {
+		background:url("../images/ball-icon.jpg") no-repeat top left;
+		padding-left:10px;
+	}
 	
 	#about h3 {
 		margin:30px 0 10px 0;
+		padding:3px 0 0 8px;
 	}
 	
 	
@@ -221,11 +266,18 @@ article, section#images, aside#seeAlso {
 
 /*Images*/
 
+#images h2 {
+	text-align:center;
+}
+
 figure {
-	margin:15px;
-	display:inline-block;
+	margin:15px auto;
 	vertical-align:bottom;
 	text-align:center;
+}
+
+#images figure a img {
+	max-width:100%;
 }
 
 
@@ -242,24 +294,30 @@ figure {
 
 /*See Also*/
 #seeAlso ul li {
-	font:700 1.05em/28px 'Lato', sans-serif;
+	font:700 1.05em/1.75em 'Lato', sans-serif;
 	
 }
 
 /*Footer*/
 footer {
-	background-color:#5084A2;
+	background: #5084a2; /* Old browsers */
+	background: -moz-linear-gradient(-65deg,  #366a87 0%, #5084a2 36%, #6b99b2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#366a87), color-stop(36%,#5084a2), color-stop(100%,#6b99b2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-65deg,  #366a87 0%,#5084a2 36%,#6b99b2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-65deg,  #366a87 0%,#5084a2 36%,#6b99b2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-65deg,  #366a87 0%,#5084a2 36%,#6b99b2 100%); /* IE10+ */
+	background: linear-gradient(175deg,  #366a87 0%,#5084a2 36%,#6b99b2 100%); /* W3C */
 	margin:80px auto 0 auto;
 	z-index:500;
 	position:relative;
-	min-width:960px;
+	width:100%;
 	box-shadow:-2px -2px 6px rgba(0, 0, 0, 0.6);
 	border-top:1px solid #C7E0EF;
 	padding:10px 0 20px 0;
 }
 
 footer h2, footer ol, footer p {
-	width:880px;
+	width:68.75%;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -278,7 +336,7 @@ footer h2, footer ol, footer p {
 
 	footer ol {
 		line-height:1.4em;
-		width:840px;
+		width:65.6%;
 	}
 
 	footer p {
