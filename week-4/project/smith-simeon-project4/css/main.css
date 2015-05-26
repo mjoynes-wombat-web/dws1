@@ -295,8 +295,12 @@ section#images, section#contact, aside#seeAlso{
 		text-align:right;
 	}
 	
-	#pricing table th#location{
-		width:25%;
+	#pricing table th#pLocation{
+		width:20%;
+	}
+	
+	#pricing table th#pFacility{
+		width:10%;
 	}
 	
 	#pricing table tr:nth-child(even){
