@@ -231,7 +231,7 @@ article {
 
 section#images, section#contact, aside#seeAlso{
 	width:26.5%;
-	float:left;
+	float:right;
 	clear:right;
 	margin-bottom:30px;
 	margin-left:1.5%;
@@ -240,14 +240,38 @@ section#images, section#contact, aside#seeAlso{
 	/*HEADINGS*/
 	
 	#about h2, #about h3 {
-		background:url("../images/ball-icon.jpg") no-repeat left;
-		padding-left:28px;
+		/*background:url("../images/ball-icon.jpg") no-repeat left;*/
+		/*padding-left:28px;*/
 	}
 	
 	#about h3 {
 		margin:30px 0 10px 0;
+		padding:10px 0 3px 4px;
+		border-bottom:2px solid #00647f;
 	}
 	
+	#about h3 a.collapse{
+		background:url('../images/collapse.png') no-repeat;
+		display:inline-block;
+		width:22px;
+		height:12px;
+		float:right;
+		clear:right;
+		margin-top:3px;
+		cursor:pointer;
+	}
+	
+	#about h3 a.collapse:hover{
+		background-position:-22px 0;
+	}
+	
+	#about h3 a.collapse.expand{
+		background-position:-44px 0;
+	}
+	
+	#about h3 a.collapse.expand:hover{
+		background-position:-66px 0;
+	}
 	
 	/*INLINE TEXT*/
 	
